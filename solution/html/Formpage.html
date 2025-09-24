@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Formpage</title>
     <link rel="stylesheet" href="../../solution/css/FormpageStylesheet.css">
+    <script src="../../solution/js/Formpage.js" defer></script>
 
 </head>
 <body>
@@ -18,13 +19,29 @@
         <p class="fillFormtext">Please enter the information about your pet:</p>
 
         <div class="formGrid">
-            <div> <!-- Top left -->
+            <div class="gridElementDiv"> <!-- Top left -->
                 <p class="formHeaderText"> Your information:</p>
 
-                <label class="formLabelText" for="fullName">Full Name:</label><br>
-                <input type="text" id="fullName" name="fullName" placeholder="Full Name" required><br>
-                <label class="formLabelText" for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="Email" required><br>
+                <label class="formLabelText" for="TypePetShelter">Are you?</label> <br>
+                <input type="radio" id="TypePetShelter" name="TypeOfListing">
+                <label class="formLabelText" for="TypePetShelter">A pet shelter</label><br>
+                <input type="radio" id="TypeOtherUser" name="TypeOfListing">
+                <label class="formLabelText" for="TypeOtherUser">Other (Breeder, private etc.)</label><br><br>
+
+
+                <div class="privateUserText" id="privateUserField">
+                    <label class="formLabelText" for="fullName">Full Name:</label><br>
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required><br>
+                </div>
+
+                <div class="petShelterText" id="petShelterField">
+                    <label class="formLabelText" for="ShelterName">Shelter Name:</label><br>
+                    <input type="text" id="ShelterName" name="ShelterName" placeholder="Shelter Name" required><br>
+                </div>
+                <div class="emailInput" id="emailField">
+                    <label class="formLabelText" for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Email" required><br>
+                </div>
             </div>
 
             <div> <!-- Top right -->
