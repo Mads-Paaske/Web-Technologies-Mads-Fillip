@@ -1,0 +1,14 @@
+.FlexContainer
+{
+    display: flex;
+    justify-content: center;
+}
+.HomepageImageLinks
+{
+    display: block;
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: auto;
+    margin-left: auto;
+}

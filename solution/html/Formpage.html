@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formpage</title>
+    <link rel="stylesheet" href="../../solution/css/FormpageStylesheet.css">
+
+</head>
+<body>
+
+<!-- This is a placeholder for the header referring to the HTML in Header.html -->
+<div id="header-placeholder"></div>
+
+<form>
+
+<div class="horizontalFormFlex">
+    <div class="boxes">
+        <p class="fillFormtext">Please enter the information about your pet:</p>
+
+        <div class="formGrid">
+            <div> <!-- Top left -->
+                <p class="formHeaderText"> Your information:</p>
+
+                <label class="formLabelText" for="fullName">Full Name:</label><br>
+                <input type="text" id="fullName" name="fullName" placeholder="Full Name" required><br>
+                <label class="formLabelText" for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
+            </div>
+
+            <div> <!-- Top right -->
+                <p class="formHeaderText">Your address:</p>
+                <label class="formLabelText" for="address">Adress:</label><br>
+                <input type="text" id="address" name="address" placeholder="Address" required><br>
+                <label class="formLabelText" for="city">City:</label><br>
+                <input type="text" id="city" name="city" placeholder="City" required><br>
+                <label class="formLabelText" for="postcode">Postcode:</label><br>
+                <input type="text" id="postcode" name="postcode" placeholder="Postcode" required><br>
+
+            </div>
+            <div> <!-- Bottom left-->
+                <p class="formHeaderText">Your pets' information:</p>
+                <label class="formLabelText" for="petName">Pet Name:</label><br>
+                <input type="text" id="petName" name="petName" placeholder="Pet Name" required><br>
+                <label class="formLabelText" for="petAge">Age:</label><br>
+                <input type="number" id="petAge" name="petAge" placeholder="Pet Age" required min="0" max="200"><br>
+                <label class="formLabelText" for="type">Type:</label><br>
+                <select id="type" name="type">
+                    <option value="Cat">Cat</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Fish">Fish</option>
+                </select>
+
+
+            </div>
+            <div> <!-- Bottom right -->
+                <br><br><br>
+                <label class="formLabelText" for="yesTraining">Has your pet received training?</label><br>
+                <input type="radio" id="yesTraining" name="training">
+                <label class="formLabelText" for="noTraining">Yes</label><br>
+                <input type="radio" id="noTraining" name="training">
+                <label class="formLabelText" for="noTraining">No</label><br><br>
+                <label class="formLabelText" for="petDescription">Describe your pet <span class="maxCharsText">(max 200 characters)</span></label><br>
+                <textarea name="petDescription" maxlength="200" id="petDescription" rows="5" cols="30"></textarea>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="whitespace"></div>
+
+    <div class="boxes">
+        <img src="../../solution/Assets/Camera_logo.png" alt="Camera Logo" class="cameraImage">
+        <p class="uploadPictureText">Upload a picture of your pet</p> <br>
+
+        <div class="uploadImageBox">
+            <p class="formLabelText">Choose a file:</p>
+            <input type="file" id="petImage" name="petImage" accept="image/*"><br>
+        </div>
+    </div>
+</div>
+
+
+
+    <div>
+        <input class="submitButton" type="submit" id="submitButton" value="Create listing">
+
+    </div>
+
+
+
+</form>
+
+
+<script src="../../solution/js/FetchHeader.js"></script>
+</body>
+</html>
