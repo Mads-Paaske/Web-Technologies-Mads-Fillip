@@ -7,6 +7,11 @@
     padding-bottom: 10px;
 }
 
+.gridElementDiv
+{
+    height: 240px;
+}
+
 .whitespace
 {
     width: 2%;
@@ -17,7 +22,7 @@
     width: 100%;
     background-color:lightgray;
     border-radius: 10px;
-    height: 500px;
+    height: 550px;
 }
 
 .cameraImage
@@ -96,15 +101,3 @@
     background-color: darkgreen;
 }
 
-.privateUserText
-{
-    display: none;
-}
-.petShelterText
-{
-    display: none;
-}
-.emailInput
-{
-    display: none;
-}

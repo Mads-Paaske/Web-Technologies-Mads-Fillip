@@ -1,4 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
+/* Had some code here to make different input fields appear or disappear but commented it out as it was not compliant
+* with the unobtrusive JS design idea.
+* But just saving it for future reference */
+
+/* document.addEventListener("DOMContentLoaded", () => {
 
     radios= document.querySelectorAll('input[name="TypeOfListing"]')
     fullName=document.getElementById("privateUserField");
@@ -21,4 +25,4 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         );
     });
-})
+}) */

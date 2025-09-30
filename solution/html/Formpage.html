@@ -28,23 +28,15 @@
                 <input type="radio" id="TypeOtherUser" name="TypeOfListing">
                 <label class="formLabelText" for="TypeOtherUser">Other (Breeder, private etc.)</label><br><br>
 
+                <label class="formLabelText" for="fullName">Full Name/Shelter Name:</label><br>
+                <input type="text" id="fullName" name="fullName" placeholder="Name" required><br>
 
-                <div class="privateUserText" id="privateUserField">
-                    <label class="formLabelText" for="fullName">Full Name:</label><br>
-                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required><br>
-                </div>
+                <label class="formLabelText" for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
 
-                <div class="petShelterText" id="petShelterField">
-                    <label class="formLabelText" for="ShelterName">Shelter Name:</label><br>
-                    <input type="text" id="ShelterName" name="ShelterName" placeholder="Shelter Name" required><br>
-                </div>
-                <div class="emailInput" id="emailField">
-                    <label class="formLabelText" for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" placeholder="Email" required><br>
-                </div>
             </div>
 
-            <div> <!-- Top right -->
+            <div class="gridElementDiv"> <!-- Top right -->
                 <p class="formHeaderText">Your address:</p>
                 <label class="formLabelText" for="address">Adress:</label><br>
                 <input type="text" id="address" name="address" placeholder="Address" required><br>
@@ -54,7 +46,7 @@
                 <input type="text" id="postcode" name="postcode" placeholder="Postcode" required><br>
 
             </div>
-            <div> <!-- Bottom left-->
+            <div class="gridElementDiv"> <!-- Bottom left-->
                 <p class="formHeaderText">Your pets' information:</p>
                 <label class="formLabelText" for="petName">Pet Name:</label><br>
                 <input type="text" id="petName" name="petName" placeholder="Pet Name" required><br>
@@ -69,7 +61,7 @@
 
 
             </div>
-            <div> <!-- Bottom right -->
+            <div class="gridElementDiv"> <!-- Bottom right -->
                 <br><br><br>
                 <label class="formLabelText" for="yesTraining">Has your pet received training?</label><br>
                 <input type="radio" id="yesTraining" name="training">
