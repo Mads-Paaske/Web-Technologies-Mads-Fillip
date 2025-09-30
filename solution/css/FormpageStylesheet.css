@@ -32,12 +32,12 @@
 .uploadPictureText
 {
     text-align: center;
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.fillFormtext
+.fillFormText
 {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-left: 10px;
     font-size: x-large;
@@ -54,18 +54,18 @@
 
 .formHeaderText
 {
-    font-family: Arial;
+    font-family: Arial, sans-serif, helvetica;
     font-size: large;
 }
 .formLabelText
 {
-    font-family: Arial;
+    font-family: Arial, sans-serif, helvetica;
     font-size: medium;
     margin-bottom: 50px;
 }
 .maxCharsText
 {
-    font-family: Arial;
+    font-family: Arial, sans-serif, helvetica;
     font-size: small;
     color: gray;
     font-weight: bold;
@@ -78,7 +78,7 @@
 .submitButton
 {
     display: block;
-    font-family: Arial;
+    font-family: Arial, sans-serif, helvetica;
     text-align: center;
     color: white;
     font-weight: bold;
