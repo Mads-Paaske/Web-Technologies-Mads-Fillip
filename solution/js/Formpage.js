@@ -26,3 +26,47 @@
         );
     });
 }) */
+
+document.addEventListener("submit", function (event) {event.preventDefault()
+
+
+    let typeOfListing = document.querySelector('input[name="TypeOfListing"]:checked').value
+    let name = document.getElementById("fullName").value;
+    let email = document.getElementById("email").value;
+    let address = document.getElementById("address").value;
+    let city = document.getElementById("city").value;
+    let postcode = document.getElementById("postcode").value;
+    let petName = document.getElementById("petName").value;
+    let petAge = document.getElementById("petAge").value;
+    let petType = document.getElementById("type").value;
+    let training = document.querySelector('input[name="training"]:checked').value
+    let petDescription = document.getElementById("petDescription").value;
+
+    //Just using placeholder image for now
+    let imagesrc = "C:\\Users\\madsp\\WebstormProjects\\Web-Technologies-Mads-Fillip\\solution\\Assets\\PlaceholderImg.svg"
+
+    console.log(typeOfListing, name, email, address, city, postcode, petName, petAge, petType, training, petDescription, imagesrc);
+
+    let entries = JSON.parse(localStorage.getItem("entries")) || [];
+
+    entries.push({
+        typeOfListing,
+        name,
+        email,
+        address,
+        city,
+        postcode,
+        petName,
+        petAge,
+        petType,
+        training,
+        petDescription,
+    });
+
+    localStorage.setItem("entries", JSON.stringify(entries));
+
+    console.log(JSON.stringify(entries));
+
+
+
+});
