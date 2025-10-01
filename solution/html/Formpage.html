@@ -5,6 +5,7 @@
     <title>Formpage</title>
     <link rel="stylesheet" href="../../solution/css/FormpageStylesheet.css">
     <script src="../../solution/js/Formpage.js" defer></script>
+    <script src="../../solution/js/FetchHeader.js"></script>
 
 </head>
 <body>
@@ -12,7 +13,7 @@
 <!-- This is a placeholder for the header referring to the HTML in Header.html -->
 <div id="header-placeholder"></div>
 
-<form>
+<form id="PetForm">
 
 <div class="horizontalFormFlex">
     <div class="boxes">
@@ -23,9 +24,9 @@
                 <p class="formHeaderText"> Your information:</p>
 
                 <label class="formLabelText" for="TypePetShelter">Are you?</label> <br>
-                <input type="radio" id="TypePetShelter" name="TypeOfListing">
+                <input type="radio" id="TypePetShelter" name="TypeOfListing" value="Pet shelter">
                 <label class="formLabelText" for="TypePetShelter">A pet shelter</label><br>
-                <input type="radio" id="TypeOtherUser" name="TypeOfListing">
+                <input type="radio" id="TypeOtherUser" name="TypeOfListing" value="Other">
                 <label class="formLabelText" for="TypeOtherUser">Other (Breeder, private etc.)</label><br><br>
 
                 <label class="formLabelText" for="fullName">Full Name/Shelter Name:</label><br>
@@ -64,9 +65,9 @@
             <div class="gridElementDiv"> <!-- Bottom right -->
                 <br><br><br>
                 <label class="formLabelText" for="yesTraining">Has your pet received training?</label><br>
-                <input type="radio" id="yesTraining" name="training">
+                <input type="radio" id="yesTraining" name="training" value="Yes">
                 <label class="formLabelText" for="noTraining">Yes</label><br>
-                <input type="radio" id="noTraining" name="training">
+                <input type="radio" id="noTraining" name="training" value="No">
                 <label class="formLabelText" for="noTraining">No</label><br><br>
                 <label class="formLabelText" for="petDescription">Describe your pet <span class="maxCharsText">(max 200 characters)</span></label><br>
                 <textarea name="petDescription" maxlength="200" id="petDescription" rows="5" cols="30"></textarea>
@@ -103,6 +104,5 @@
 <div id="footer-placeholder"></div>
 
 
-<script src="../../solution/js/FetchHeader.js"></script>
 </body>
 </html>
