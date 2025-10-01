@@ -16,3 +16,23 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+
+.ImageContainer {
+    position: relative;  /* makes the text position relative to this container */
+    display: inline-block;
+    margin: 10px;
+}
+
+.OverlayText
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    font-family: verdana;
+}
