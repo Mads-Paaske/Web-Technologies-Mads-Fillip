@@ -1,5 +1,5 @@
 # The Pet EmPAWrium
-This project is made by Mads Paaske Rasmussen(madsp24) and Fillip Essmann Davidsen(fidav24)
+This project is made by Mads Paaske Rasmussen(madsp24) and Fillip Essmann Davidsen(fidav24). The project is coded in our github repo: https://github.com/Mads-Paaske/Web-Technologies-Mads-Fillip
 
 ## Choose a topic
 Our choice of topic is creating a website for a pet shelter where pet shelters and private users can create listings for pets and adopt pets.

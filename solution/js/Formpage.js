@@ -43,9 +43,9 @@ document.addEventListener("submit", function (event) {event.preventDefault()
     let petDescription = document.getElementById("petDescription").value;
 
     //Just using placeholder image for now
-    let imagesrc = "C:\\Users\\madsp\\WebstormProjects\\Web-Technologies-Mads-Fillip\\solution\\Assets\\PlaceholderImg.svg"
+    let image = "Assets/PlaceholderImg.svg"
 
-    console.log(typeOfListing, name, email, address, city, postcode, petName, petAge, petType, training, petDescription, imagesrc);
+    console.log(typeOfListing, name, email, address, city, postcode, petName, petAge, petType, training, petDescription, image);
 
     let entries = JSON.parse(localStorage.getItem("entries")) || [];
 
@@ -61,12 +61,10 @@ document.addEventListener("submit", function (event) {event.preventDefault()
         petType,
         training,
         petDescription,
+        image,
     });
 
     localStorage.setItem("entries", JSON.stringify(entries));
 
     console.log(JSON.stringify(entries));
-
-
-
 });
